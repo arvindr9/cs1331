@@ -4,6 +4,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+/*Note: index % 8 where index is an the index of a position at a board, is invariant among every position in a column.
+    Also, Math.floor(index/8) is invariant among every position in a row.*/
+
 public class PgnReader {
 
     private static String board =
