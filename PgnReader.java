@@ -376,8 +376,8 @@ public class PgnReader {
         }
     }
 
-    public static boolean checkBishop(int index, int pos) {
-        if (Math.floor(index / 8) + (index % 8)
+    public static boolean checkBishop(int index, int pos) { //Checks if the move is legal diagonally from index to pos
+        if (Math.floor(index / 8) + (index % 8)  //Motivation: Diagonal lines follow equations x + y = c, x - y = c
             == Math.floor(pos / 8) + (pos % 8)) {
             if (index < pos) {
                 for (int i = index; i < pos; i += 7) {
@@ -426,7 +426,7 @@ public class PgnReader {
         return false;
     }
 
-    public static boolean checkRook(int index, int pos) {
+    public static boolean checkRook(int index, int pos) { //Checks if the move is legal laterally from index to pos
         if (Math.floor(index / 8) == Math.floor(pos / 8)) {
             if (index < pos) {
                 for (int i = index; i < pos; i++) {
@@ -472,7 +472,7 @@ public class PgnReader {
 
     }
 
-    public static boolean checkQueen(int index, int pos) {
+    public static boolean checkQueen(int index, int pos) { 
         return (checkBishop(index, pos) || checkRook(index, pos));
     }
 
