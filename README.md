@@ -11,7 +11,7 @@ Links to the homework assignment descriptions:
 
 <a href = "http://cs1331.gatech.edu/fall2017/hw1/hw1-pgn-reader.html">HW1</a>
 
-<a href = "http://cs1331.gatech.edu/fall2017/hw2/hw2-pgn-reader.html">HW2</a>
+<a href = "http://cs1331.gatech.edu/fall2017/hw2/hw2-chess-classes.html">HW2</a>
 
 <a href = "http://cs1331.gatech.edu/fall2017/hw3/hw3-pgn-exceptions.html">HW3</a>
 
